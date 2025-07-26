@@ -1,0 +1,43 @@
+.search-toggle {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.search-toggle button {
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 10px 0;
+	transition: all 0.3s;
+	font-size: 15px;
+	flex: 1;
+	max-width: 180px;
+}
+
+.search-toggle button:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-right: none;
+}
+
+.search-toggle button:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* ボタンがクリックされたときに適用するスタイル */
+.search-toggle button.active {
+	background-color: #3b5ca8;
+	color: white;
+	border-color: #3b5ca8;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.search-toggle button {
+		padding: 8px 0;
+		font-size: 12px;
+	}
+}
